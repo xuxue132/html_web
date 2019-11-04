@@ -316,7 +316,9 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+.rtitle div{
+    cursor: pointer;
+}
 .picture {
     width: 76px;
     height: 17px;
@@ -338,6 +340,10 @@ body {
     height: 40px;
     width: 701px;
     color: #777675;
+}
+
+.ul_food td{
+    cursor: pointer;
 }
 
 .tbody_tbottom {
