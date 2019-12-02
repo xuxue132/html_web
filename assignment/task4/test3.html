@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>读取表单数据</title>
+    <script type="text/javascript">
+        function confirmTheData() {
+            var name = document.getElementById("name").value ;
+            var password = document.getElementById("password").value ;
+            var repassword = document.getElementById("re-password").value ;
+            var sex = document.getElementsByName("sex") ;
+            var gender;
+            for(var i=0;i<sex.length;i++){
+                if(sex[i].checked ===true){
+                    gender = sex[i].value;
+                    console.log(gender);
+                }
+            }
+            var age = document.getElementById("age").value ;
+            alert("登录名："+name+"\n密码："+password+"\n确认密码："+repassword+"\n性别："+gender+"\n年龄："+age);
+        }
+    </script>
+</head>
+<body>
+<h1>会员注册</h1>
+<div style="display: flex">
+    <p>登录名：</p>
+    <input type="text" id="name" style="height: 28px;margin-top: 12px;">
+</div>
+<div style="display: flex">
+    <p>密码：</p>
+    <input type="password" id="password" style="height: 28px;margin-top: 12px;">
+</div>
+<div style="display: flex">
+    <p>确认密码：</p>
+    <input type="password" id="re-password" style="height: 28px;margin-top: 12px;">
+</div>
+<div style="display: flex">
+    <p>性别：</p>
+    <input type="radio" name="sex" checked="checked" style="margin-top: 20px;" value="男性"><p>男性</p>
+    <input type="radio" name="sex" style="margin-top: 20px;" value="女性"><p>女性</p>
+</div>
+<div style="display: flex">
+    <p>年龄：</p>
+    <select style="height: 28px;margin-top: 12px;" id="age">
+        <option>-请选择-</option>
+        <option>20岁</option>
+        <option>21岁</option>
+        <option>22岁</option>
+    </select>
+</div>
+<input type="button" value="提交" onclick="confirmTheData()">
+
+</body>
+</html>

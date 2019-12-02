@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language=javascript>
+        function clock() {
+            var t=new Date();
+            document.getElementById("time").innerHTML= t ;
+            window.setTimeout( clock, 1000);
+        }
+    </script>
+</head>
+<body onload="clock()">
+<span id="time" style="width: 400px;height: 100px;">
+</span>
+</body>
+</html>
