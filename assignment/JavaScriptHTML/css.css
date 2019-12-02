@@ -1,0 +1,301 @@
+Div {
+    overflow: hidden;
+}
+
+body {
+    width: 1229px;
+    height: 645px;
+    margin: 0 auto;
+    background-color: #c5c3c1;
+}
+
+.left {
+    float: left;
+}
+
+.web_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+}
+
+.text_css {
+    color: red;
+    cursor: pointer;
+}
+
+.float-right {
+    position: relative;
+    margin-left: 45%;
+}
+
+.float-left {
+    position: relative;
+    margin-left: 45%;
+}
+
+.but {
+    display: inline;
+}
+
+.function_button {
+    height: 55px;
+    width: 1229px;
+    margin-left: 4px;
+}
+
+.but_color {
+    height: 40px;
+    width: 95px;
+    background-color: #5cb85c;
+    border: black solid 1px;
+    color: aliceblue;
+}
+
+.but_color2 {
+    height: 40px;
+    width: 95px;
+    background-color: #d9534f;
+    border: black solid 1px;
+    color: aliceblue;
+}
+
+.init {
+    height: 455px;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.head_table {
+    background-color: #dadee1;
+    width: 1220px;
+    height: 55px;
+}
+
+#change_next {
+    height: 79px;
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#record {
+    height: 79px;
+    width: 239px;
+    color: #000000;
+    line-height: 79px;
+}
+
+#record_button {
+    height: 79px;
+    width: 190px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last {
+    width: 90px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #5cb85c;
+    border: #000000 solid 1px;
+}
+
+.next {
+    width: 90px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #d9534f;
+    border: #000000 solid 1px;
+}
+
+.body_table {
+    width: 1220px;
+
+}
+
+.body_table tr:hover {
+    background-color: gainsboro;
+}
+
+.title {
+    padding-top: 11px;
+    font-size: 20px;
+    color: #999999;
+    text-align: center;
+}
+
+.butt {
+    width: 1200px;
+}
+
+.line {
+    height: 4px;
+    width: 400px;
+    background-color: #c3a080;
+
+}
+
+#div {
+    height: 450px;
+    width: 552px;
+    position: absolute;
+    margin-left: 400px;
+    top: 111px;
+    background-color: whitesmoke;
+    border: black solid 1px;
+}
+
+.seeclass {
+    height: 450px;
+    width: 552px;
+    position: absolute;
+    margin-left: 400px;
+    top: 111px;
+    background-color: whitesmoke;
+    border: black solid 1px;
+}
+
+.oneline {
+    height: 40px;
+    width: 552px;
+    color: #ffffff;
+    background-color: black;
+}
+
+.title_location {
+    height: 24px;
+    width: 145px;
+    margin-left: 24px;
+    margin-top: 9px;
+}
+
+.twoline {
+
+    height: 58px;
+    width: 552px;
+    border: 1px solid #aeaeae;
+}
+
+#see_button {
+    width: 96px;
+    height: 40px;
+    border: 1px solid #aeaeae;
+    background-color: #ffffff;
+}
+
+.div_button {
+    margin-top: 9px;
+    margin-right: 31px;
+    height: 49px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_button_see {
+    margin-top: 9px;
+    margin-right: 39px;
+    height: 40px;
+    width: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    float: right;
+}
+
+#yes {
+    width: 96px;
+    height: 40px;
+    border: 1px solid #aeaeae;
+    background-color: #5cb85c;
+}
+
+#no {
+    width: 96px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #aeaeae;
+}
+
+#save {
+    width: 96px;
+    height: 40px;
+    border: 1px solid #aeaeae;
+    background-color: #ffffff;
+}
+
+#no_save {
+    width: 96px;
+    height: 40px;
+    border: 1px solid #aeaeae;
+    background-color: #5cb85c;
+}
+
+.add_data {
+    height: 352px;
+    width: 552px;
+    text-align: center;
+}
+
+.add_page {
+    width: 304px;
+    height: 310px;
+    margin-left: 119px;
+}
+
+.one_word {
+    width: 304px;
+    height: 30px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.one_word input {
+    height: 24px;
+    width: 204px;
+    background-color: #ebebe4;
+}
+
+.width_word {
+    height: 24px;
+    width: 77px;
+}
+
+.one_word span {
+    display: block;
+    height: 17px;
+    width: 17px;
+}
+
+
+.initial {
+    border: 1px solid #a9a9a9;
+}
+
+.wrong {
+    border: red solid 1px;
+}
+
+.right2 {
+    border: green solid 1px;
+}
+
+.color_singular {
+    height: 40px;
+    background-color: #ffffff;
+}
+
+.color_even {
+    height: 40px;
+    background-color: #eef1f8;
+}
+
+

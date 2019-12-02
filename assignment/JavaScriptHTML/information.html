@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<div class="web_title">
+    <div class="line"></div>
+    <div class="title">学生信息管理系统</div>
+    <div class="line"></div>
+</div>
+<div class="function_button">
+    <input class="but_color" name="name" type="button" onClick="show();" value="新增">
+    <input class="but_color2" name="name2" type="button" onClick="delete_student();" value="删除">
+</div>
+
+<div class="init" id="inf">
+    <table id="tab1" class="body_table" cellspacing="0px">
+
+    </table>
+
+</div>
+<div id="change_next">
+    <div id="record">
+
+    </div>
+    <div id="record_button">
+
+    </div>
+</div>
+
+<div id="div" style="display: none;">
+    <div class="oneline">
+        <div class="title_location">新增学生信息</div>
+    </div>
+    <div class="add_data">
+        <div class="add_page">
+            <div class="one_word">
+                <div class="width_word left">学号</div>
+                <label for="xh"></label><input type="text" id="xh" name="xh" onblur="f()" class="initial"><span
+                    id="id_student"></span></div>
+            <div class="one_word">
+                <div class="width_word left">姓名</div>
+                <label for="xh_first"></label><input type="text" id="xh_first" name="xh_name"
+                                                     onblur="ch_verification('first','name')" class="initial"><span
+                    id="xh_name"></span></div>
+            <div class="one_word">
+                <div class="width_word left">学院</div>
+                <label for="xh_isecond"></label><input type="text" id="xh_isecond" name="xh_icollege"
+                                                       onblur="ch_verification('isecond','icollege')"
+                                                       class="initial"><span id="xh_icollege"></span></div>
+            <div class="one_word">
+                <div class="width_word left">专业</div>
+                <label for="xh_threeth"></label><input type="text" id="xh_threeth" name="xh_word"
+                                                       onblur="ch_verification('threeth','word')" class="initial"><span
+                    id="xh_word"></span></div>
+            <div class="one_word">
+                <div class="width_word left">年级</div>
+                <label for="xh_forth"></label><input type="text" id="xh_forth" name="xh_gade"
+                                                     onblur="number_verification('forth','gade')" class="initial"><span
+                    id="xh_gade"></span></div>
+            <div class="one_word">
+                <div class="width_word left">班级</div>
+                <label for="xh_fiveth"></label><input type="text" id="xh_fiveth" name="xh_class"
+                                                      onblur="number_verification('fiveth','class')"
+                                                      class="initial"><span id="xh_class"></span></div>
+            <div class="one_word">
+                <div class="width_word left">年龄</div>
+                <label for="xh_sixth"></label><input type="text" id="xh_sixth" name="xh_ocld"
+                                                     onblur="number_verification('sixth','old')" class="initial"><span
+                    id="xh_old"></span><br></div>
+        </div>
+
+    </div>
+
+    <div class="twoline">
+        <div class="div_button right">
+            <input class="butcolor right" name="name1" type="button" value="提交" onClick="add();" id="yes">
+            <input class="butcolor right" name="name2" type="button" value="取消" onclick="close_window()" id="no">
+        </div>
+    </div>
+</div>
+<div id="see_information" class="seeclass" style="display: none;">
+    <div class="oneline">
+        <div class="title_location">查看学生信息</div>
+    </div>
+    <div class="add_data">
+        <div class="add_page">
+            <div class="one_word">
+                <div class="width_word left">学号</div>
+                <label for="see_id"></label><input type="text" id="see_id" class="initial"
+                                                   readonly="readonly"><span></span></div>
+            <div class="one_word">
+                <div class="width_word left">姓名</div>
+                <label for="see_student"></label><input type="text" id="see_student" class="initial"
+                                                        readonly="readonly"><span></span></div>
+            <div class="one_word">
+                <div class="width_word left">学院</div>
+                <label for="see_colloge"></label><input type="text" id="see_colloge" class="initial"
+                                                        readonly="readonly"><span></span></div>
+            <div class="one_word">
+                <div class="width_word left">专业</div>
+                <label for="see_studty"></label><input type="text" id="see_studty" class="initial"
+                                                       readonly="readonly"><span></span></div>
+            <div class="one_word">
+                <div class="width_word left">年级</div>
+                <label for="see_gade"></label><input type="text" id="see_gade" class="initial"
+                                                     readonly="readonly"><span></span></div>
+            <div class="one_word">
+                <div class="width_word left">班级</div>
+                <label for="see_class"></label><input type="text" id="see_class" class="initial"
+                                                      readonly="readonly"><span></span></div>
+            <div class="one_word">
+                <div class="width_word left">年龄</div>
+                <label for="see_old"></label><input type="text" id="see_old" class="initial"
+                                                    readonly="readonly"><span></span></div>
+        </div>
+
+    </div>
+
+    <div class="twoline">
+        <div class="div_button_see right">
+            <input class="butcolor right" name="name2" type="button" value="取消" onclick="close_see()" id="see_button">
+        </div>
+    </div>
+</div>
+<div id="change_information" class="seeclass" style="display: none;">
+
+    <div class="oneline">
+        <div class="title_location">修改学生信息</div>
+    </div>
+    <div class="add_data">
+        <div class="add_page">
+            <div class="one_word">
+                <div class="width_word left">学号</div>
+                <label for="change_id"></label><input type="text" id="change_id" class="initial"
+                                                      onblur="change_student1()">
+                <span id="change_student_id"></span>
+            </div>
+            <div class="one_word">
+                <div class="width_word left">姓名</div>
+                <label for="change_student"></label><input type="text" id="change_student" class="initial"
+                                                           onblur="change_student2('change_student','change_student_name')"><span
+                    id="change_student_name"></span></div>
+            <div class="one_word">
+                <div class="width_word left">学院</div>
+                <label for="change_colloge"></label><input type="text" id="change_colloge" class="initial"
+                                                           onblur="change_student2('change_colloge','change_student_colloge')"><span
+                    id="change_student_colloge"></span></div>
+            <div class="one_word">
+                <div class="width_word left">专业</div>
+                <label for="change_studty"></label><input type="text" id="change_studty" class="initial"
+                                                          onblur="change_student2('change_studty','change_student_studty')"><span
+                    id="change_student_studty"></span></div>
+            <div class="one_word">
+                <div class="width_word left">年级</div>
+                <label for="change_gade"></label><input type="text" id="change_gade" class="initial"
+                                                        onblur="change_student3('change_gade','change_student_gade')"><span
+                    id="change_student_gade"></span></div>
+            <div class="one_word">
+                <div class="width_word left">班级</div>
+                <label for="change_class"></label><input type="text" id="change_class" class="initial"
+                                                         onblur="change_student3('change_class','change_student_class')"><span
+                    id="change_student_class"></span></div>
+            <div class="one_word">
+                <div class="width_word left">年龄</div>
+                <label for="change_old"></label><input type="text" id="change_old" class="initial"
+                                                       onblur="change_student3('change_old','change_student_old')"><span
+                    id="change_student_old"></span></div>
+        </div>
+
+    </div>
+
+    <div class="twoline">
+        <div class="div_button right">
+            <input class="butcolor right" name="name1" type="button" value="保存" onClick="save()" id="no_save">
+            <input class="butcolor right" name="name2" type="button" value="取消" onclick="close_change()" id="save">
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
